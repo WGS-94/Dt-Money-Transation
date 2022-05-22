@@ -56,7 +56,7 @@ button {
 }
 
 .react-modal-overlay {
-  background: rbga(0, 0, 0, 0.4);
+  background: rbga(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   bottom: 0;
