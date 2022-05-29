@@ -4,10 +4,10 @@
 </div>-->
 
 <!-- Title -->
-<h1> RocketSeat 🔥 Ignite ReactJS </h1>
+<h1 align="center"> RocketSeat 🔥 Ignite ReactJS </h1>
 
 <!-- Subtitle -->
-<h2 align="center"> Módulo 2 - Primeira aplicação web com React ( DT Money ) </h2>
+<h2> Módulo 2 - Primeira aplicação web com React ( DT Money ) </h2>
 
 <!-- Badges 
 <p align="center">
