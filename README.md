@@ -1,7 +1,7 @@
-<!-- Logotipo -->
+<!-- Logotipo 
 <div align="center">
   <img src="./Assets/ignite.png">
-</div>
+</div>-->
 
 <!-- Title -->
 <h1 align="center"> RocketSeat 🔥 Ignite ReactJS </h1>
@@ -49,7 +49,7 @@ DT Money é um controle de contas financeiro pessoal que cadastra contas de entr
 ## ⚙️ Rodando o Projeto
 ```bash
 # Clone este repositório para a pasta anterior
-$ git clone https://github.com/brunoemferreira/rocketseat-ignite-dt-money.git
+$ git clone https://github.com/WGS-94/Dt-Money-Transation.git
 # ou use a opção de download.
 # Acesse a pasta Dt-Money-Transation
 $ cd Dt-Money-Transation
