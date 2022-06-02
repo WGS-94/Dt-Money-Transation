@@ -1,59 +1,46 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { createServer, Model} from "miragejs";
-import App from './App';
+import ReactDOM from 'react-dom';
+import { createServer, Model } from 'miragejs';
+import { App } from './App';
 
 createServer({
-
   models: {
-    transation: Model
+    transaction: Model,
   },
 
   seeds(server) {
     server.db.loadData({
-      transations: [
+      transactions: [
         {
           id: 1,
-          title: 'Frelance de Websites',
+          title: 'Freelancer de WebSite',
           type: 'deposit',
-          category: 'Desenvolvimento',
-          amount: 5000,
+          category: 'Dev',
+          amount: 6000,
           createdAt: new Date('2021-02-12 09:00:00')
-        },
-        {
-          id: 2,
-          title: 'Aluguel',
-          type: 'withdraw',
-          category: 'Casa',
-          amount: 2100,
-          createdAt: new Date('2021-02-14 11:00:00')
         }
-      ],
+      ]
     })
   },
 
   routes() {
     this.namespace = 'api';
 
-    this.get('/transations', () => {
-      return this.schema.all('transation');
+    this.get('/transactions', () => {
+      return this.schema.all('transaction');
     })
 
-    this.post('/transations', (schema, request) => {
+    this.post('/transactions', (schema, request) => {
       const data = JSON.parse(request.requestBody);
 
-      return schema.create('transation', data);
+      return schema.create('transaction', data);
     })
-
-
   }
 })
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );

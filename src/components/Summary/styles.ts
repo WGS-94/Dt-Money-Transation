@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.main`
+export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -9,8 +9,8 @@ export const Container = styled.main`
   div {
     background: var(--shape);
     padding: 1.5rem 2rem;
-    border-radius: 0.25rem;
-    color: var(--text-tittle);
+    border-radius: 0.25rem; 
+    color: var(--text-title);
 
     header {
       display: flex;
@@ -26,9 +26,10 @@ export const Container = styled.main`
       line-height: 3rem;
     }
 
-  &.highlight-background {
-    background: var(--green);
-    color: #fff;
+    &.highlight-background {
+       background: var( --green);
+       color: #ffffff;
+    }
   }
-  }
+
 `;

@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Container = styled.main`
-  margin-top: 4rem;
-
-  table {
-    width: 100%;
-    border-spacing: 0 0.5rem;
+export const Container = styled.div`
+   margin-top: 4rem;
+   
+   table {
+     width: 100%;
+     border-spacing: 0 0.5rem;
   }
-
+  
   th {
     color: var(--text-body);
     font-weight: 400;
@@ -19,7 +19,7 @@ export const Container = styled.main`
   td {
     padding: 1rem 2rem;
     border: 0;
-    background: var(--shape);
+    background-color: var(--shape);
     color: var(--text-body);
     border-radius: 0.25rem;
 
@@ -34,5 +34,7 @@ export const Container = styled.main`
     &.withdraw {
       color: var(--red);
     }
+
   }
+
 `;
